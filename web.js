@@ -1,13 +1,19 @@
 // web.js
-var express = require("express");
-var logfmt = require("logfmt");
+var express = require("express"),
+    config = require('./config/config')[process.env.AppMode||'development'];
+
+
 var app = express();
 
-app.use(logfmt.requestLogger());
+// database settings
+require('./config/database')(config);
 
-app.get('/', function(req, res) {
-  res.send('Hello World!');
-});
+// express settings
+require('./config/express')(app,config);
+
+// global routes
+require('./config/routes')(app,config);
+
 
 var port = Number(process.env.PORT || 5000);
 app.listen(port, function() {
