@@ -1,0 +1,33 @@
+{
+  "name": "DashDog",
+  "version": "0.0.0",
+  "description": "Company Dashboard App",
+  "main": "web.js",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rohitghatol/dashdog.git"
+  },
+  "keywords": [
+    "NodeJs",
+    "Dashboard",
+    "MongoDB",
+    "Polymer.js",
+    "D3.js"
+  ],
+  "author": "Rohit Ghatol",
+  "license": "Apache 2.0 License",
+  "bugs": {
+    "url": "https://github.com/rohitghatol/dashdog/issues"
+  },
+  "homepage": "https://github.com/rohitghatol/dashdog",
+  "dependencies": {
+    "express": "^4.5.1"
+  },
+  "devDependencies": {}
+}
